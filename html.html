@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Login2</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+  <script>
+
+
+
+const person = {
+	name: "Masum",
+  isHuman: false,
+  printIntroduction: function() {
+    document.write(`My name is ${this.name}. Am I human? ${this.isHuman}`);
+  }
+};
+
+const me = new Object(person);
+
+me.name = 'Matthew'; // "name" is a property set on "me", but not on "person"
+me.isHuman = true; // inherited properties can be overwritten
+
+me.printIntroduction();
+// expected output: "My name is Matthew. Am I human? true"
+
+  	
+//   	var model={
+
+//   		name:"Masum",
+//   		id:12,
+//   		add:"Dhaka"
+//   	}
+
+// output= model.name;
+// output+= model.id;
+// output+= model.add;
+// document.write(output+"<br>");
+
+
+// var person = new Object();
+// person.firstName = "John";
+// person.lastName = "Doe";
+// person.age = 50;
+// person.eyeColor = "blue"; 
+
+// document.write(person.firstName + " is " + person.age + " years old"+"<br>");
+
+
+// var model = {
+// 		user: "Adam",
+// 		items: [{ action: "Buy Flowers", done: false },
+// 				{ action: "Get Shoes", done: false },
+// 				{ action: "Collect Tickets", done: true },
+// 				{ action: "Call Joe", done: false }]
+// 	};
+
+// document.write(model.items[1].action);
+
+
+
+
+
+
+  </script>
+
+</body>
+</html>
